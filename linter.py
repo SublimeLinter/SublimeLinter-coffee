@@ -22,7 +22,7 @@ class Coffee(Linter):
     regex = (
         r'^.+?:(?P<line>\d+):(?P<col>\d+): (?:(?P<error>error)|(?P<warning>warning)): (?P<message>[^\r\n]+)'
     )
-    output_stream = util.STREAM_STDERR
+    error_stream = util.STREAM_STDERR
     comment_re = r'\s*/[/*]'
 
     def cmd(self):
