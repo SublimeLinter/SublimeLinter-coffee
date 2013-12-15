@@ -10,7 +10,7 @@
 
 """This module exports the Coffee plugin class."""
 
-from SublimeLinter.lint import Linter, persist
+from SublimeLinter.lint import Linter, persist, util
 
 
 class Coffee(Linter):
@@ -22,6 +22,7 @@ class Coffee(Linter):
     regex = (
         r'^.+?:(?P<line>\d+):(?P<col>\d+): (?:(?P<error>error)|(?P<warning>warning)): (?P<message>[^\r\n]+)'
     )
+    output_stream = util.STREAM_STDERR
     comment_re = r'\s*/[/*]'
 
     def cmd(self):
