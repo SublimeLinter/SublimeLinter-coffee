@@ -2,8 +2,8 @@
 # linter.py
 # Linter for SublimeLinter3, a code checking framework for Sublime Text 3
 #
-# Written by Aparajita
-# Copyright (c) 2013 Aparajita
+# Written by Aparajita Fishman
+# Copyright (c) 2013 Aparajita Fishman
 #
 # License: MIT
 #
@@ -25,7 +25,7 @@ class Coffee(Linter):
     comment_re = r'\s*/[/*]'
 
     def cmd(self):
-        """Return a tuple with the command line to execute."""
+        """Return a list with the command line to execute."""
 
         result = ['coffee', '--compile', '--stdio']
 

@@ -1,6 +1,6 @@
-SublimeLinter-contrib-coffee
+SublimeLinter-coffee
 -------------------------------
 
 This linter plugin for SublimeLinter provides an interface to coffee.
 
-For more information, please see https://github.com/SublimeLinter/SublimeLinter-contrib-coffee.
+For more information, please see https://github.com/SublimeLinter/SublimeLinter-coffee.
