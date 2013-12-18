@@ -28,7 +28,7 @@ class Coffee(Linter):
     def cmd(self):
         """Return a list with the command line to execute."""
 
-        result = ['coffee', '--compile', '--stdio']
+        result = [self.executable_path, '--compile', '--stdio']
 
         if persist.get_syntax(self.view) == 'coffeescript_literate':
             result.append('--literate')
