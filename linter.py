@@ -10,27 +10,18 @@
 
 """This module exports the Coffee plugin class."""
 
-from SublimeLinter.lint import Linter, persist, util
+from SublimeLinter.lint import Linter, util
 
 
 class Coffee(Linter):
 
     """Provides an interface to coffee --compile."""
 
-    syntax = ('coffeescript', 'coffeescript_literate')
-    executable = 'coffee'
+    syntax = 'coffeescript'
+    cmd = 'coffee --compile'
     regex = (
         r'^.+?:(?P<line>\d+):(?P<col>\d+): (?:(?P<error>error)|(?P<warning>warning)): (?P<message>[^\r\n]+)'
     )
     error_stream = util.STREAM_STDERR
     comment_re = r'\s*/[/*]'
-
-    def cmd(self):
-        """Return a list with the command line to execute."""
-
-        result = [self.executable_path, '--compile', '--stdio']
-
-        if persist.get_syntax(self.view) == 'coffeescript_literate':
-            result.append('--literate')
-
-        return result
+    tempfile_suffix = 'coffee'

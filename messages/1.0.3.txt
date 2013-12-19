@@ -1,0 +1,6 @@
+SublimeLinter-coffee 1.0.3
+-------------------------------
+Please note that for technical reasons, this plugin cannot lint
+literate coffeescript.
+
+I recommend using SublimeLinter-coffeelint, it's a better linter.
