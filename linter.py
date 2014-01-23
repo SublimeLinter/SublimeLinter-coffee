@@ -20,7 +20,7 @@ class Coffee(Linter):
     syntax = 'coffeescript'
     cmd = 'coffee --compile'
     version_args = '--version'
-    version_re = r'^CoffeeScript version (?P<version>\d+\.\d+\.\d+)'
+    version_re = r'(?P<version>\d+\.\d+\.\d+)'
     version_requirement = '>= 1.5'
     regex = (
         r'^.+?:(?P<line>\d+):(?P<col>\d+): (?:(?P<error>error)|(?P<warning>warning)): (?P<message>[^\r\n]+)'
