@@ -18,7 +18,7 @@ class Coffee(Linter):
     """Provides an interface to coffee --compile."""
 
     syntax = 'coffeescript'
-    cmd = 'coffee --compile'
+    cmd = 'coffee --compile --stdio'
     version_args = '--version'
     version_re = r'(?P<version>\d+\.\d+\.\d+)'
     version_requirement = '>= 1.5'
@@ -27,4 +27,3 @@ class Coffee(Linter):
     )
     error_stream = util.STREAM_STDERR
     comment_re = r'\s*/[/*]'
-    tempfile_suffix = 'coffee'
