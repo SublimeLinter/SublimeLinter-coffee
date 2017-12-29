@@ -3,7 +3,7 @@ SublimeLinter-coffee
 
 [![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-coffee.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-coffee)
 
-This linter plugin for [SublimeLinter](http://sublimelinter.readthedocs.org) provides an interface to the [coffeescript compiler](http://coffeescript.org). It will be used with files that have the “CoffeeScript” syntax.
+This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter) provides an interface to the [coffeescript compiler](http://coffeescript.org). It will be used with files that have the “CoffeeScript” syntax.
 
 ## Installation
 SublimeLinter must be installed in order to use this plugin. 
