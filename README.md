@@ -3,7 +3,8 @@ SublimeLinter-coffee
 
 [![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-coffee.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-coffee)
 
-This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter) provides an interface to the [coffeescript compiler](http://coffeescript.org). It will be used with files that have the “CoffeeScript” syntax.
+This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter) provides an interface to the [coffeescript compiler](http://coffeescript.org).
+It will be used with files that have the "CoffeeScript" syntax.
 
 ## Installation
 
@@ -22,7 +23,8 @@ To install `coffee`, do the following:
 
 1. If you are using `nvm` and `zsh`, ensure that the line to load `nvm` is in `.zshenv` and not `.zshrc`.
 
-In order for `coffee` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. The docs cover [troubleshooting PATH configuration](http://sublimelinter.com/en/latest/troubleshooting.html#finding-a-linter-executable).
+Please make sure that the path to `coffee` is available to SublimeLinter.
+The docs cover [troubleshooting PATH configuration](http://sublimelinter.com/en/latest/troubleshooting.html#finding-a-linter-executable).
 
 ### Settings
 
